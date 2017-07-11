@@ -20,24 +20,32 @@ img {
   function FunFact() {
   document.getElementById("fact").innerHTML = "My birthday is on July 4th!";
  }
+ 
   window.alert("Welcome to my website!")
+  
   function makebigger (x) {
   	x.style.height = "350px";
     x.style.width = "300px";
   }
+  
   function makesmaller(x){
   	x.style.height = "250px";
     x.style.width = "200px";
   }
   
+  function moreinfo() {
+  document.getElementById("more").innerHTML = "I watch ALOT of Netflix :)";
+  }
  </script>
- <p id="demo"></p>
+ 
  <center>
   <h1> Kelly Ma </h1>
   <img onmouseover = "makebigger(this)" onmouseout = "makesmaller(this)" src="IMG_4389.JPG" alt="Picture of Myself" style="width:200px;height:250px;"> 
 
   <h2> About Me! </h2>
   <p> Hi! My name is Kelly Ma and I live in Foster City, California. I am 16 years old and will be a Junior in San Mateo High School. I enjoy eating food and watching Netflix, but in order to stay fit I also like to go running or go hiking in my free time. </p>
+  <p>If you want to know more <button onclick = "moreinfo()">Click here!</button></p>
+  <p id = "more"></p>
  
   <button onclick = "FunFact()"> Click for a Fun Fact about me! </button>
   <p id="fact"> </p> 
