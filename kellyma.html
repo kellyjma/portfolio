@@ -10,6 +10,43 @@ body {background-color: #87CEFA;}
 img {
  image-orientation: from-image;
   }
+  
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 20px;
+    background-color: #F6A1F1;
+}
+
+#likes {
+    top: 80px;
+    background-color: #A1E0F6;
+}
+
+#dislikes {
+    top: 140px;
+    background-color: #90F46B;
+}
+
+#contact {
+    top: 200px;
+    background-color: #F3FA88;
+}
+  
 </style>
  
 </head>
@@ -24,7 +61,7 @@ img {
   window.alert("Welcome to my website!")
   
   function makebigger (x) {
-  	x.style.height = "400px";
+  	x.style.height = "350px";
     x.style.width = "300px";
   }
   
@@ -37,6 +74,12 @@ img {
   document.getElementById("more").innerHTML = "I watch ALOT of Netflix :)";
   }
  </script>
+ <div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="likes">Likes</a>
+  <a href="#" id="dislikes">Dislikes</a>
+  <a href="#" id="contact">Contact</a>
+</div>
  
  <center>
   <h1> Kelly Ma </h1>
@@ -44,7 +87,7 @@ img {
 
   <h2> About Me! </h2>
   <p> Hi! My name is Kelly Ma and I live in Foster City, California. I am 16 years old and will be a Junior in San Mateo High School. I enjoy eating food and watching Netflix, but in order to stay fit I also like to go running or go hiking in my free time. </p>
-  <p>If you want to know more <button onclick = "moreinfo()">click here!</button></p>
+  <p>If you want to know more <button onclick = "moreinfo()">Click here!</button></p>
   <p id = "more"></p>
  
   <button onclick = "FunFact()"> Click for a Fun Fact about me! </button>
