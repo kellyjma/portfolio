@@ -16,8 +16,18 @@ img {
 
 <body>
  
+ <p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+ 
+ 
  <script>
- function FunFact() {
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+  
+  function FunFact() {
   document.getElementbyId("fact").innerHTML = "My birthday is on July 4th!";
  }
  </script>
